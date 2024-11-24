@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>ISS LineupForm</title>
+    <link rel="stylesheet" href="./css/LineupForm.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Images/Inchcape-Logo-from-Wordpress.png" alt="">
+        </div>
+        <div class="title">
+            <h1>ISS Shipping India - Vessel LineUp</h1>
+        </div>
+        <div class="menu">
+            <p><a href="LineupForm.html" class="nav">LineUp Form</a></p>
+            <p><a href="LineupForm.html" class="nav">Extract Data</a></p>
+            <p><a href="Index.html" class="nav">Logout Data</a></p>
+        </div>
+    </header>
+    <form method="get">
+        <div class="maincontainer">
+            <section class="container1">
+                <div class="flex2_div">
+                    <label for="lineupdate">LineUp Date:</label>
+                    <input class="fill" type="date" name="lineupdate" id="currentDate" required>
+                </div>
+                <div class="flex2_div">
+                    <label for="port">Port:</label>
+                    <input class="fill" type="text" name="port" id="" required>
+                </div>
+                <div class="flex2_div">
+                    <label for="berth">Berth:</label>
+                    <input class="fill" class="fill" type="text" name="berth" id="" required>
+                </div>
+                <div class="flex2_div">
+                    <label for="vessel">Vessle Name:</label>
+                    <input class="fill" type="text" name="vessel" id="" required>
+                </div>
+                <div class="container1-2">
+                    <label class="etadatel" for="etadate"> Arrived /ETA:</label>
+                    <input class="etadatei" type="date" name="etadate" id="" required>
+                    <label class="etatimel" for="etatime"> </label>
+                    <input class="etatimei" type="time" name="etatime" id="" required>
+                </div>
+                <div class="container1-2">
+                    <label class="etbdatel" for="etbdate"> Berthed /ETB:</label>
+                    <input class="etbdatei" type="date" name="etbdate" id="" >
+                    <label class="etbtimel" for="etbtime"> </label>
+                    <input class="etbtimei" type="time" name="etbtime" id="" >
+                </div>
+                <div class="container1-2">
+                    <label class="etcdatel" for="etcdate"> Departed /ATD:</label>
+                    <input class="etcdatei" type="date" name="etcdate" id="" >
+                    <label class="etctimel" for="etctime"> </label>
+                    <input class="etctimei" type="time" name="etctime" id="" >
+                </div>
+            </section>
+            <section class="container1">
+                <div class="flex2_div">
+                    <label for="vesseltype">Vessel Type:</label>
+                    <select name="vesseltype" id="">
+                        <option value="">Select</option>
+                        <option value="bulk">Bulk</option>
+                        <option value="crudeoilcarieer">Crude Oil Carieer</option>
+                        <option value="edibleoilcarieer">Edible Oil Carieer</option>
+                        <option value="chemicalcarieer">Chemical Carieer</option>
+                        <option value="gascarieer">Gas Carieer</option>
+                        <option value="Containercarieer">Container Vessel</option>
+                    </select>
+                </div>
+                <div class="flex2_div">
+                    <label for="cargo">Cargo:</label>
+                    <input class="fill" type="text" name="cargo" id="" required>
+                </div>
+                <div class="flex2_div">
+                    <label for="cargoqty">Cargo Quantity:</label>
+                    <input class="fill" type="number" name="cargoqty" id="" required>
+                </div>
+                <div class="flex2_div">
+                    <label for="units">Units:</label>
+                    <select name="operation" id="" required>
+                        <option value="">Select</option>
+                        <option value="mts">Mts</option>
+                        <option value="boxes">Boxes</option>
+                        <option value="bags">Bags</option>
+                    </select>
+                </div>
+                <div class="flex2_div">
+                    <label for="operation">Operation:</label>
+                    <select name="operation" id="" required>
+                        <option value="">Select</option>
+                        <option value="Load">Load</option>
+                        <option value="Discharge">Discharge</option>
+                        <option value="Load/Discharge">Load/Discharge</option>
+                    </select>
+                </div>
+                
+                <div class="flex2_div">
+                    <label for="shipper">Shipper:</label>
+                    <input class="fill" type="text" name="shipper" id="" >
+                </div>
+                <div class="flex2_div">
+                    <label for="receiver">Receiver:</label>
+                    <input class="fill" type="text" name="receiver" id="" >
+                </div>
+            </section>
+            <section class="container1">
+                <div class="flex2_div">
+                    <label for="cos/for">Coastal/Foreign:</label>
+                    <select name="cos/for" id="" required>
+                        <option value="">Select</option>
+                        <option value="coastal">Costal</option>
+                        <option value="foreign">Foreign</option>
+                    </select>
+                </div>
+                <div class="flex2_div">
+                    <label for="lastport">Last Port:</label>
+                    <input class="fill" type="text" name="lastport" id="" required>
+                </div>
+                <div class="flex2_div">
+                    <label for="nextport">Next Port:</label>
+                    <input class="fill" type="text" name="nextport" id="" required>
+                </div>
+                <div class="flex2_div">
+                    <label for="agent">Agent:</label>
+                    <input class="fill" type="text" name="agent" id="" required>
+                </div>
+                <div class="flex2_div">
+                    <label for="status">Current Status:</label>
+                    <select name="status" id="" required>
+                        <option value="">Select</option>
+                        <option value="at_berth">At Berth</option>
+                        <option value="arrived">Arrived</option>
+                        <option value="expected">Expected</option>
+                        <option value="Sailed">Sailed</option>
+                    </select>
+                </div>
+                <section class="inflex2">
+                    <textarea name="textarea" id="">Remarks</textarea>            
+                </section>
+            </section>
+            <section class="containersub">
+                <input class="Submitbotton" type="submit" value="ADD VESSEL">
+                <input class="Submitbotton" type="submit" value="UPDATE VESSEL DETAILS">
+                <input class="Submitbotton" type="submit" value="SUBMIT LINEUP">
+            </section>
+        </div>
+    </form>
+</body>
+</html>
