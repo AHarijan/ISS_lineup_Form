@@ -32,9 +32,10 @@ header{
 }
 .menu{
     display: flex;
-    justify-content: space-around;
-    width: 40%;
+    justify-content: right ;
+    width: 27%;
     margin-top: 20px;
+    gap: 20px;
 }
 .menu .nav{
     padding: 10px;
@@ -145,6 +146,7 @@ select{
 .TableArea{
     border: 1px solid black;
     height: 500px;
+    width: 91%;
     margin: 12px;
     border-radius: 5px;
     overflow-x: auto;
