@@ -13,11 +13,12 @@ body{
 header{
     display: flex;
     background-color: #001325;
-    height: 90px;
+    height: 80px;
+    width: 100%;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
-    margin: 10px;
+    position: fixed;
 }
 .title{
     width: 60%;
@@ -44,6 +45,9 @@ header{
     text-decoration: none;
     color: white;
     font-size: 12px;
+}
+form{
+    margin-top: 80px;
 }
 .maincontainer{
     display: flex;
@@ -72,7 +76,7 @@ header{
     margin-bottom: 10px;
 }
 label{
-    width: 180px;
+    width: 140px;
     border-radius: 5px;
     margin: 3px;
 }
@@ -88,7 +92,7 @@ label{
     margin-bottom: 10px;
 }
 .etadatel, .etbdatel{
-    width: 180px;
+    width: 140px;
 }
 .etatimel, .etbtimel, .etctimel{
     margin: 0;
@@ -107,8 +111,25 @@ label{
     width: 90px;
     height: 20px;
 }
+.fillqty1, .fillqty2, .fillqty3{
+    width: 120px;
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin: 3px;
+}
+.unitl1, .unitl2, .unitl3{
+    width: 30px;
+    border-radius: 5px;
+    margin: 3px;
+}
+.unitsec1, .unitsec2, .unitsec3{
+    width: 80px;
+    border-radius: 5px;
+    margin: 3px;
+}
 textarea{
-    height: 65px;
+    height: 190px;
     width: 87%;
     width: 100%;
     border-radius: 5px;
@@ -122,13 +143,13 @@ select{
 }
 .containersub{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     background: #296c85;
     flex-wrap: wrap;
     margin-top: 4px;
     padding: 10px;
-    height: 270px;
-    width: 200px;
+    height: 40px;
+    width: 98%;
     color: white;
     font-size: 10px;
     font-family: "Poppins", sans-serif;
@@ -139,14 +160,14 @@ select{
     align-items: center;
     justify-content: center;
     height: 40px;
-    margin: 6px;
+    margin-left: 6px;
     border-radius: 10px;
-    width: 90%;
+    width: 20%;
 }
 .TableArea{
     border: 1px solid black;
-    height: 500px;
-    width: 91%;
+    height: 370px;
+    width: 100%;
     margin: 12px;
     border-radius: 5px;
     overflow-x: auto;
@@ -169,6 +190,20 @@ select{
         font-size: 25px;
     }
     .containersub{
-        width: 84%;
+        width: 400px;
+        height: 160px;
+    }
+    .Submitbotton{
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        margin: 6px;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .TableArea{
+        width: 400px;
+        overflow-x: auto;
+        overflow-y: auto;
     }
 }
