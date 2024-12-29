@@ -15,10 +15,8 @@ function lineUpForm(){
     console.log(etb)
 
     if (etb < eta) {
-        // document.getElementById("error").textContent = "ETA cannot be greater that ETB"
         alert("ETA cannot be greater that ETB")
     }
-
     return false;
 
 
