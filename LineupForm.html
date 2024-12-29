@@ -27,25 +27,45 @@
             <section class="container1">
                 <div class="flex2_div">
                     <label for="lineupdate">LineUp Date:</label>
-                    <input class="fill" type="date" name="lineupdate" id="currentDate" required>
+                    <input class="fill" type="date" name="lineupdate" id="currentDate" >
                 </div>
                 <div class="flex2_div">
                     <label for="port">Port:</label>
-                    <input class="fill" type="text" name="port" id="" placeholder="Port" required>
+                    <input list="port" id="port" class="fill" name="port"  placeholder="Port" >
+
+                    <datalist id="port">
+                        <option value="Budge Budge">
+                        <option value="Chennai">
+                        <option value="Cochin ">
+                        <option value="Dabhol">
+                        <option value="Dhamra">
+                        <option value="Gopalpur">
+                        <option value="Hazira">
+                        <option value="Kakinada">
+                        <option value="Kandla">
+                        <option value="Krishnapatnam">
+                        <option value="Mormugao">
+                        <option value="Mundra">
+                        <option value="New Mangalore">
+                        <option value="Sikka">
+                        <option value="Tuticorin">
+                        <option value="Vadinar ">
+                        <option value="Vizag">                            
+                    </datalist>
                 </div>
                 <div class="flex2_div">
                     <label for="berth">Berth:</label>
-                    <input class="fill" class="fill" type="text" name="berth" id="" required>
+                    <input class="fill" class="fill" type="text" name="berth" id="" >
                 </div>
                 <div class="flex2_div">
                     <label for="vessel">Vessel Name:</label>
-                    <input class="fill" type="text" name="vessel" id="" required>
+                    <input class="fill" type="text" name="vessel" id="" >
                 </div>
                 <div class="container1-2">
                     <label class="etadatel" for="etadate"> Arrived /ETA:</label>
-                    <input class="etadatei" type="date" name="etadate" id="etadate" required >
+                    <input class="etadatei" type="date" name="etadate" id="etadate"  >
                     <label class="etatimel" for="etatime"> </label>
-                    <input class="etatimei" type="time" name="etatime" id="etatime" required>
+                    <input class="etatimei" type="time" name="etatime" id="etatime" >
                 </div>
                 <div class="container1-2">
                     <label class="etbdatel" for="etbdate"> Berthed /ETB:</label>
@@ -60,7 +80,7 @@
                     <input class="etctimei" type="time" name="etctime" id="etctime" >
                 </div>
             </section>
-            <!-- <section class="container1">
+            <section class="container1">
                 
                 <div class="flex2_div">
                     <label for="cargo">Cargo 1:</label>
@@ -69,9 +89,8 @@
                 <div class="flex2_div">
                     <label for="cargoqty">Cargo Quantity 1:</label>
                     <input class="fillqty1" type="number" name="cargoqty1" id="" required>
-                    <label class="unitl1" for="1">Unit:</label>
                     <select class="unitsec1" name="operation" id="" required>
-                        <option value="">Select</option>
+                        <option value="">Units</option>
                         <option value="mts">Mts</option>
                         <option value="boxes">Boxes</option>
                         <option value="bags">Bags</option>
@@ -84,9 +103,8 @@
                 <div class="flex2_div">
                     <label for="cargoqty">Cargo Quantity 2:</label>
                     <input class="fillqty2" type="number" name="cargoqty2" id="" required>
-                    <label class="unitl2" for="unit2">Unit:</label>
                     <select class="unitsec2" name="operation" id="" required>
-                        <option value="">Select</option>
+                        <option value="">Units</option>
                         <option value="mts">Mts</option>
                         <option value="boxes">Boxes</option>
                         <option value="bags">Bags</option>
@@ -99,9 +117,8 @@
                 <div class="flex2_div">
                     <label for="cargoqty">Cargo Quantity 3:</label>
                     <input class="fillqty3" type="number" name="cargoqty3" id="" required>
-                    <label class="unitl3" for="unit3">Unit:</label>
                     <select class="unitsec3" name="operation" id="" required>
-                        <option value="">Select</option>
+                        <option value="">Units</option>
                         <option value="mts">Mts</option>
                         <option value="boxes">Boxes</option>
                         <option value="bags">Bags</option>
@@ -186,16 +203,16 @@
                 <section class="inflex2">
                     <textarea name="textarea" id="">Remarks</textarea>            
                 </section>
-            </section> -->
+            </section>
             <section class="containersub">
-                <!-- <input class="Submitbotton" type="reset" name="clearAll" value="CLEAR ALL" id="clearAll"></input>
+                <input class="Submitbotton" type="reset" name="clearAll" value="CLEAR ALL" id="clearAll"></input>
                 <input class="Submitbotton" type="submit" name="addVessel" value="ADD VESSEL" id="addVessel"></input>
-                <input class="Submitbotton" type="submit" name="udateVesselDetails" value="UPDATE VESSEL DETAILS" id="udateVesselDetails"></input> -->
+                <input class="Submitbotton" type="submit" name="udateVesselDetails" value="UPDATE VESSEL DETAILS" id="udateVesselDetails"></input>
                 <input class="Submitbotton" type="submit" name="submit" value="SUBMIT LINEUP" id="submit">
             </section> 
-            <!-- <Section class="TableArea">
+            <Section class="TableArea">
                 
-            </Section>   -->
+            </Section>  
         </div> 
     </form>
 <script src="./js/LineupForm.js">
