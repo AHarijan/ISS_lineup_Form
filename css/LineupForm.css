@@ -136,8 +136,8 @@ label{
 }
 textarea{
     height: 190px;
-    width: 87%;
-    width: 100%;
+    width: 335px;
+    /* width: 100%; */
     border-radius: 5px;
 }
 select{
