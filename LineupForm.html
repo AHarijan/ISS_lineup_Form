@@ -84,12 +84,12 @@
                 
                 <div class="flex2_div">
                     <label for="cargo">Cargo 1:</label>
-                    <input class="fill" type="text" name="cargo1" id="" required>
+                    <input class="fill" type="text" name="cargo1" id="" >
                 </div>
                 <div class="flex2_div">
                     <label for="cargoqty">Cargo Quantity 1:</label>
-                    <input class="fillqty1" type="number" name="cargoqty1" id="" required>
-                    <select class="unitsec1" name="operation" id="" required>
+                    <input class="fillqty1" type="number" name="cargoqty1" id="" >
+                    <select class="unitsec1" name="operation" id="" >
                         <option value="">Units</option>
                         <option value="mts">Mts</option>
                         <option value="boxes">Boxes</option>
@@ -98,12 +98,12 @@
                 </div>
                 <div class="flex2_div">
                     <label for="cargo">Cargo 2:</label>
-                    <input class="fill" type="text" name="cargo2" id="" required>
+                    <input class="fill" type="text" name="cargo2" id="" >
                 </div>
                 <div class="flex2_div">
                     <label for="cargoqty">Cargo Quantity 2:</label>
-                    <input class="fillqty2" type="number" name="cargoqty2" id="" required>
-                    <select class="unitsec2" name="operation" id="" required>
+                    <input class="fillqty2" type="number" name="cargoqty2" id="" >
+                    <select class="unitsec2" name="operation" id="" >
                         <option value="">Units</option>
                         <option value="mts">Mts</option>
                         <option value="boxes">Boxes</option>
@@ -112,18 +112,33 @@
                 </div>
                 <div class="flex2_div">
                     <label for="cargo">Cargo 3:</label>
-                    <input class="fill" type="text" name="cargo3" id="" required>
+                    <input class="fill" type="text" name="cargo3" id="" >
                 </div>
                 <div class="flex2_div">
                     <label for="cargoqty">Cargo Quantity 3:</label>
-                    <input class="fillqty3" type="number" name="cargoqty3" id="" required>
-                    <select class="unitsec3" name="operation" id="" required>
+                    <input class="fillqty3" type="number" name="cargoqty3" id="" >
+                    <select class="unitsec3" name="operation" id="" >
                         <option value="">Units</option>
                         <option value="mts">Mts</option>
                         <option value="boxes">Boxes</option>
                         <option value="bags">Bags</option>
                     </select>
                 </div>
+                <!-- <div class="flex2_div">
+                    <label for="vesseltype">Vessel Type:</label>
+                    <select name="vesseltype" id="">
+                        <option value="">Select</option>
+                        <option value="bulk">Bulk</option>
+                        <option value="crudeoilcarieer">Crude Oil Carieer</option>
+                        <option value="edibleoilcarieer">Edible Oil Carieer</option>
+                        <option value="chemicalcarieer">Chemical Carieer</option>
+                        <option value="gascarieer">Gas Carieer</option>
+                        <option value="Containercarieer">Container Vessel</option>
+                    </select>
+                </div> -->
+            </section>
+            <section class="container1">
+
                 <div class="flex2_div">
                     <label for="vesseltype">Vessel Type:</label>
                     <select name="vesseltype" id="">
@@ -136,21 +151,9 @@
                         <option value="Containercarieer">Container Vessel</option>
                     </select>
                 </div>
-            </section>
-            <section class="container1">
-                
-                <div class="flex2_div">
-                    <label for="units">Units:</label>
-                    <select name="operation" id="" required>
-                        <option value="">Select</option>
-                        <option value="mts">Mts</option>
-                        <option value="boxes">Boxes</option>
-                        <option value="bags">Bags</option>
-                    </select>
-                </div>
                 <div class="flex2_div">
                     <label for="operation">Operation:</label>
-                    <select name="operation" id="" required>
+                    <select name="operation" id="" >
                         <option value="">Select</option>
                         <option value="Load">Load</option>
                         <option value="Discharge">Discharge</option>
@@ -168,7 +171,7 @@
                 </div>
                 <div class="flex2_div">
                     <label for="cos/for">Coastal/Foreign:</label>
-                    <select name="cos/for" id="" required>
+                    <select name="cos/for" id="" >
                         <option value="">Select</option>
                         <option value="coastal">Costal</option>
                         <option value="foreign">Foreign</option>
@@ -176,11 +179,11 @@
                 </div>
                 <div class="flex2_div">
                     <label for="lastport">Last Port:</label>
-                    <input class="fill" type="text" name="lastport" id="" required>
+                    <input class="fill" type="text" name="lastport" id="lastport" >
                 </div>
                 <div class="flex2_div">
                     <label for="nextport">Next Port:</label>
-                    <input class="fill" type="text" name="nextport" id="" required>
+                    <input class="fill" type="text" name="nextport" id="nextport" >
                 </div>
             </section>
             
@@ -188,15 +191,15 @@
                 
                 <div class="flex2_div">
                     <label for="agent">Agent:</label>
-                    <input class="fill" type="text" name="agent" id="" required>
+                    <input class="fill" type="text" name="agent" id="agent" >
                 </div>
                 <div class="flex2_div">
                     <label for="status">Current Status:</label>
-                    <select name="status" id="" required>
+                    <select name="status" id="CurrStatus" >
                         <option value="">Select</option>
-                        <option value="at_berth">At Berth</option>
-                        <option value="arrived">Arrived</option>
-                        <option value="expected">Expected</option>
+                        <option value="At Berth">At Berth</option>
+                        <option value="Arrived">Arrived</option>
+                        <option value="Expected">Expected</option>
                         <option value="Sailed">Sailed</option>
                     </select>
                 </div>
@@ -210,9 +213,9 @@
                 <input class="Submitbotton" type="submit" name="udateVesselDetails" value="UPDATE VESSEL DETAILS" id="udateVesselDetails"></input>
                 <input class="Submitbotton" type="submit" name="submit" value="SUBMIT LINEUP" id="submit">
             </section> 
-            <Section class="TableArea">
+            <!-- <Section class="TableArea">
                 
-            </Section>  
+            </Section>   -->
         </div> 
     </form>
 <script src="./js/LineupForm.js">
