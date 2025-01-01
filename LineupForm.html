@@ -17,7 +17,7 @@
         </div>
         <div class="menu">
             <p><a href="LineupForm.html" class="nav">LineUp Form</a></p>
-            <p><a href="LineupForm.html" class="nav">Extract Data</a></p>
+            <p><a href="extractData.html" class="nav">Extract Data</a></p>
             <p><a href="Index.html" class="nav">Logout Data</a></p>
         </div>
     </header>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="flex2_div">
                     <label for="port">Port:</label>
-                    <input list="port" id="port" class="fill" name="port"  placeholder="Port" >
+                    <input list="port" id="port" class="fill" name="port">
 
                     <datalist id="port">
                         <option value="Budge Budge">
@@ -55,11 +55,11 @@
                 </div>
                 <div class="flex2_div">
                     <label for="berth">Berth:</label>
-                    <input class="fill" class="fill" type="text" name="berth" id="" >
+                    <input class="fill" class="fill" type="text" name="berth" id="berth">
                 </div>
                 <div class="flex2_div">
                     <label for="vessel">Vessel Name:</label>
-                    <input class="fill" type="text" name="vessel" id="" >
+                    <input class="fill" type="text" name="vessel" id="vessel">
                 </div>
                 <div class="container1-2">
                     <label class="etadatel" for="etadate"> Arrived /ETA:</label>
@@ -84,12 +84,12 @@
                 
                 <div class="flex2_div">
                     <label for="cargo">Cargo 1:</label>
-                    <input class="fill" type="text" name="cargo1" id="" >
+                    <input class="fill" type="text" name="cargo1" id="cargo1">
                 </div>
                 <div class="flex2_div">
                     <label for="cargoqty">Cargo Quantity 1:</label>
-                    <input class="fillqty1" type="number" name="cargoqty1" id="" >
-                    <select class="unitsec1" name="operation" id="" >
+                    <input class="fillqty1" type="number" name="cargoqty1" id="cargoQtyF1">
+                    <select class="unitsec1" name="cargoqty1" id="cargoQtyU1">
                         <option value="">Units</option>
                         <option value="mts">Mts</option>
                         <option value="boxes">Boxes</option>
@@ -141,7 +141,7 @@
 
                 <div class="flex2_div">
                     <label for="vesseltype">Vessel Type:</label>
-                    <select name="vesseltype" id="">
+                    <select name="vesseltype" id="vesseltype">
                         <option value="">Select</option>
                         <option value="bulk">Bulk</option>
                         <option value="crudeoilcarieer">Crude Oil Carieer</option>
@@ -153,7 +153,7 @@
                 </div>
                 <div class="flex2_div">
                     <label for="operation">Operation:</label>
-                    <select name="operation" id="" >
+                    <select name="operation" id="operation">
                         <option value="">Select</option>
                         <option value="Load">Load</option>
                         <option value="Discharge">Discharge</option>
@@ -171,7 +171,7 @@
                 </div>
                 <div class="flex2_div">
                     <label for="cos/for">Coastal/Foreign:</label>
-                    <select name="cos/for" id="" >
+                    <select name="" id="cos/for" >
                         <option value="">Select</option>
                         <option value="coastal">Costal</option>
                         <option value="foreign">Foreign</option>
@@ -213,9 +213,9 @@
                 <input class="Submitbotton" type="submit" name="udateVesselDetails" value="UPDATE VESSEL DETAILS" id="udateVesselDetails"></input>
                 <input class="Submitbotton" type="submit" name="submit" value="SUBMIT LINEUP" id="submit">
             </section> 
-            <!-- <Section class="TableArea">
+            <Section class="TableArea">
                 
-            </Section>   -->
+            </Section>  
         </div> 
     </form>
 <script src="./js/LineupForm.js">
