@@ -140,5 +140,8 @@ function lineUpForm(){
     else if (CurrentStatus.trim() === "") {
         alert("Please fill in the form, select the current status and SUBMIT again");
         return false;
-    }   
+    } 
+    else 
+        alert("Details submitted successfully")
+        return true  
 }

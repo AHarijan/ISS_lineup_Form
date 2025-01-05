@@ -119,7 +119,7 @@ select{
     font-family: monospace;
     font-size: 13px;
 }
-button{
+.extbtn{
     display: flex;
     flex-direction: column;
     height: 40px;
