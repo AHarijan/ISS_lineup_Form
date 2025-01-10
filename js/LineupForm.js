@@ -6,14 +6,20 @@ const day = String(today.getDate()).padStart(2,'0');
 const currtDate = `${year}-${month}-${day}`;
 document.getElementById('currentDate').value=currtDate;
 
-console.log(currtDate)
+const currtStatus = "Expected"
+document.getElementById('CurrStatus').value=currtStatus;
 
 
 function lineUpForm(){
 
     const Port = document.getElementById('port').value
     const Berth = document.getElementById('berth').value
+    const Imo = document.getElementById('imono').value
+    const VesselSlt = document.getElementById('vesselSlt').value
     const Vessel = document.getElementById('vessel').value
+    const Loa = document.getElementById('loa').value
+    const Beam = document.getElementById('beam').value
+    const Draft = document.getElementById('draft').value
     const Cargo1 = document.getElementById('cargo1').value
     const CargoQtyF1 = document.getElementById('cargoQtyF1').value
     const cargoQtyUnits1 = document.getElementById('cargoQtyU1').value
@@ -44,6 +50,39 @@ function lineUpForm(){
     let etbDateTimeObj = new Date(etbDateTime);
     let etcDateTimeObj = new Date(etcDateTime);
 
+    if (Port ===  "") {
+        alert("Port cannot be kept blank");
+        return false;
+    } 
+    else if (Berth ===  "") {
+        alert("Berth cannot be kept blank");
+        return false;
+    } 
+    else if (Imo ===  "") {
+        alert("Imo cannot be kept blank");
+        return false;
+    }
+    else if (VesselSlt === "") {
+        alert("Vessel Slt cannot be kept blank");
+        return false;
+    } 
+    else if (Vessel === "") {
+        alert("Vessel Name cannot be kept blank");
+        return false;
+    }
+    else if (Loa === "") {
+        alert("LOA cannot be kept blank");
+        return false;
+    }
+    else if (Beam === "") {
+        alert("Beam Name cannot be kept blank");
+        return false;
+    }
+    else if (Draft === "") {
+        alert("Draft cannot be kept blank");
+        return false;
+    }
+    
     
     if (CurrentStatus === "Expected") {
         let etaNotNull = !etaDate;
@@ -53,6 +92,7 @@ function lineUpForm(){
             Arrival Date cannot be blank or a past date`);
             return false;
         }
+        
     } else if (CurrentStatus === "Arrived") {
         let ataNotBlank_A = !etaDateTime.includes(" ");
         let etbNotNull = !etbDate;
@@ -101,19 +141,8 @@ function lineUpForm(){
             return false;
         }
     } 
-    if (Port ===  "") {
-        alert("Port cannot be kept blank");
-        return false;
-    } 
-    else if (Berth ===  "") {
-        alert("Berth cannot be kept blank");
-        return false;
-    } 
-    else if (Vessel === "") {
-        alert("Vessel Name cannot be kept blank");
-        return false;
-    } 
-    else if (Cargo1 ===  "") {
+    
+    if (Cargo1 ===  "") {
         alert("First Cargo cannot be kept blank");
         return false;
     } 
@@ -142,6 +171,7 @@ function lineUpForm(){
         return false;
     } 
     else 
-        alert("Details submitted successfully")
-        return true  
+    alert("Details submitted successfully")
+    return true 
+    
 }

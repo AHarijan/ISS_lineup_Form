@@ -12,14 +12,16 @@
         <div class="logo">
             <img src="./Images/Inchcape-Logo-from-Wordpress.png" alt="">
         </div>
-        <div class="title">
-            <h1>ISS Shipping India - Vessel LineUp</h1>
-        </div>
-        <div class="menu">
-            <p><a href="LineupForm.html" class="nav">LineUp Form</a></p>
-            <p><a href="extractData.html" class="nav">Extract Data</a></p>
-            <p><a href="addPortBerth.html" class="nav">Add Port/Berth</a></p>
-            <p><a href="Index.html" class="nav">Logout Data</a></p>
+        <div class="head1">
+            <div class="title">
+                <h1>ISS Shipping India - Vessel LineUp</h1>
+            </div>
+            <div class="menu">
+                <p><a href="LineupForm.html" class="nav">LineUp Form</a></p>
+                <p><a href="extractData.html" class="nav">Extract Data</a></p>
+                <p><a href="addPortBerth.html" class="nav">Add Port/Berth</a></p>
+                <p><a href="Index.html" class="nav">Logout Data</a></p>
+            </div>
         </div>
     </header>
     <form method="post" onsubmit="return lineUpForm()">
@@ -59,9 +61,32 @@
                     <input class="fill" class="fill" type="text" name="berth" id="berth">
                 </div>
                 <div class="flex2_div">
-                    <label for="vessel">Vessel Name:</label>
-                    <input class="fill" type="text" name="vessel" id="vessel">
+                    <label for="imono">IMO No:</label>
+                    <input class="fill" type="text" name="imono" id="imono">
                 </div>
+                <div class="flex2_div">
+                    <label for="vesselSlt">Slt. Name:</label>
+                    <select class="fillvst" type="text" name="vesselSlt" id="vesselSlt">
+                        <option value="">Slt.</option>
+                        <option value="MT">MT</option>
+                        <option value="MV">MV</option>
+                    <input class="fillV" type="text" name="vessel" id="vessel">
+                </div>
+                <div class="flex2_div">
+                    <label for="loa">LOA:</label>
+                    <input class="fill" type="text" name="loa" id="loa">
+                </div>
+                <div class="flex2_div">
+                    <label for="beam">Beam:</label>
+                    <input class="fill" class="fill" type="text" name="beam" id="beam">
+                </div>
+                <div class="flex2_div">
+                    <label for="draft">Draft:</label>
+                    <input class="fill" type="text" name="draft" id="draft">
+                </div>
+                
+            </section>
+            <section class="container1">
                 <div class="container1-2">
                     <label class="etadatel" for="etadate"> Arrived /ETA:</label>
                     <input class="etadatei" type="date" name="etadate" id="etadate"  >
@@ -79,16 +104,13 @@
                     <input class="etcdatei" type="date" name="etcdate" id="etcdate" >
                     <label class="etctimel" for="etctime"> </label>
                     <input class="etctimei" type="time" name="etctime" id="etctime" >
-                </div>
-            </section>
-            <section class="container1">
-                
+                </div>                
                 <div class="flex2_div">
                     <label for="cargo">Cargo 1:</label>
                     <input class="fill" type="text" name="cargo1" id="cargo1">
                 </div>
                 <div class="flex2_div">
-                    <label for="cargoqty">Cargo Quantity 1:</label>
+                    <label for="cargoqty">Cargo Qty 1:</label>
                     <input class="fillqty1" type="number" name="cargoqty1" id="cargoQtyF1">
                     <select class="unitsec1" name="cargoqty1" id="cargoQtyU1">
                         <option value="">Units</option>
@@ -144,7 +166,9 @@
                     <label for="vesseltype">Vessel Type:</label>
                     <select name="vesseltype" id="vesseltype">
                         <option value="">Select</option>
-                        <option value="bulk">Bulk</option>
+                        <option value="breakBulk">Break Bulk</option>
+                        <option value="dryBulk">Dry Bulk</option>
+                        <option value="genBulk">General Bulk</option>
                         <option value="crudeoilcarieer">Crude Oil Carieer</option>
                         <option value="edibleoilcarieer">Edible Oil Carieer</option>
                         <option value="chemicalcarieer">Chemical Carieer</option>
@@ -161,7 +185,6 @@
                         <option value="Load/Discharge">Load/Discharge</option>
                     </select>
                 </div>
-                
                 <div class="flex2_div">
                     <label for="shipper">Shipper:</label>
                     <input class="fill" type="text" name="shipper" id="" >
@@ -169,6 +192,14 @@
                 <div class="flex2_div">
                     <label for="receiver">Receiver:</label>
                     <input class="fill" type="text" name="receiver" id="" >
+                </div>
+                <div class="flex2_div">
+                    <label for="principal">Principal:</label>
+                    <input class="fill" type="text" name="principal" id="principal" >
+                </div>
+                <div class="flex2_div">
+                    <label for="owner">Owner:</label>
+                    <input class="fill" type="text" name="owner" id="owner" >
                 </div>
                 <div class="flex2_div">
                     <label for="cos/for">Coastal/Foreign:</label>
@@ -189,9 +220,20 @@
             </section>
             
             <section class="container1">
-                
                 <div class="flex2_div">
-                    <label for="agent">Agent:</label>
+                    <label for="loadPort">Load Port:</label>
+                    <input class="fill" type="text" name="loadPort" id="loadPort" >
+                </div>
+                <div class="flex2_div">
+                    <label for="dischargePort">Discharge Port:</label>
+                    <input class="fill" type="text" name="dischargePort" id="dischargePort" >
+                </div>
+                <div class="flex2_div">
+                    <label for="cAgent">Chrts Agent:</label>
+                    <input class="fill" type="text" name="cAgent" id="cAgent" >
+                </div>
+                <div class="flex2_div">
+                    <label for="ownerAgent">Owners Agent:</label>
                     <input class="fill" type="text" name="agent" id="agent" >
                 </div>
                 <div class="flex2_div">
@@ -213,11 +255,12 @@
                 <input class="Submitbotton" type="submit" name="addVessel" value="ADD VESSEL" id="addVessel"></input>
                 <input class="Submitbotton" type="submit" name="udateVesselDetails" value="UPDATE VESSEL DETAILS" id="udateVesselDetails"></input>
                 <input class="Submitbotton" type="submit" name="submit" value="SUBMIT LINEUP" id="submit">
-            </section> 
-            <Section class="TableArea">
+                <input class="Submitbotton" type="submit" name="download" value="Download LINEUP" id="download">
+            </section>   
+        </div>
+        <Section class="TableArea">
                 
-            </Section>  
-        </div> 
+        </Section> 
     </form>
 <script src="./js/LineupForm.js">
     
