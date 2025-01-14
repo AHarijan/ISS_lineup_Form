@@ -4,5 +4,5 @@ document.getElementById("addPort").onclick = function(){
     section.parentNode.insertBefore(clone, section.nextSibling);
 };
 
-var placeholderText = "Write all the cargo handled \n at berth followed by /";
+var placeholderText = "Write all the cargo handled at berth followed by /";
 document.getElementById("cargoType").placeholder = placeholderText.replace(/\n/g, ' '); 
